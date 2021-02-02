@@ -9,7 +9,7 @@
     $reclamo = $_POST['exampleInputReclamo'];
      
     $sql="INSERT INTO tickets (Recurrente,Fecha,Tipo_Reclamo,Nro_Documento,Reclamo)
-            VALUES ('1','1','1','1','1')";
+            VALUES ('$recurrente','$fecha','$tipoReclamo','$nroDocumento','$reclamo')";
     echo "Updated records: "+ mysqli_affected_rows($conex);
     echo $resultado= mysqli_query($conex, $sql);
    
